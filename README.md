@@ -9,6 +9,7 @@ http://<路由器IP>/pppwn.html
 pppwn启动默认设置监听了所有的lan端口，如果想要监听特定的lan端口，可安装后自行修改/etc/init.d/pppwn文件，将br-lan改为需要的lan口。
 如果要更新pppwn，可从最下方预编译版本链接中下载自己CPU架构对应的pppwn，替换掉/usr/bin/pppwn文件，然后重启路由器或者重启pppwn服务。
 重启pppwn可以在路由器web控制台或者命令行控制台执行。命令行控制台重启命令为：
+
 /etc/init.d/pppwn stop
 
 /etc/init.d/pppwn start
@@ -20,13 +21,19 @@ opkg update
 opkg install tar gzip
 
 解压并执行安装：
+
 tar xf pppwn_openwrt*.tgz
+
 cd pppwn_openwrt
+
 ./install.sh
 
 安装包兼容9.00 / 10.00 / 10.01版本，修改install.sh文件中的FIRMWARE=1100为对应的FIRMWARE版本，
+
 9.00: FIRMWARE=900
+
 10.00: FIRMWARE=1000
+
 10.01: FIRMWARE=1001
 然后执行安装即可。
 
