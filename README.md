@@ -35,6 +35,7 @@ cd pppwn_openwrt
 10.00: FIRMWARE=1000
 
 10.01: FIRMWARE=1001
+
 然后执行安装即可。
 
 pppwn_cpp 预编译版本下载：
@@ -45,5 +46,7 @@ https://b23.tv/VjC3o9e
 
 致谢：
 xfangfang:  https://github.com/xfangfang/PPPwn_cpp
+
 CodeInvers3: https://github.com/CodeInvers3/PPPwn_ow
+
 EmuMaster：https://www.bilibili.com/video/BV1Ft421u7X4/
