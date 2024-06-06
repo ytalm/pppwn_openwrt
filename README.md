@@ -10,9 +10,11 @@ pppwn启动默认设置监听了所有的lan端口，如果想要监听特定的
 如果要更新pppwn，可从最下方预编译版本链接中下载自己CPU架构对应的pppwn，替换掉/usr/bin/pppwn文件，然后重启路由器或者重启pppwn服务。
 重启pppwn可以在路由器web控制台或者命令行控制台执行。命令行控制台重启命令为：
 /etc/init.d/pppwn stop
+
 /etc/init.d/pppwn start
 
 安装解压软件包：
+
 opkg update
 
 opkg install tar gzip
