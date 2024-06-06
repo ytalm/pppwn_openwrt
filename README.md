@@ -1,0 +1,2 @@
+# pppwn_openwrt
+通过openwrt路由器注入PPPwn，给PS4运行GoldHEN越狱
