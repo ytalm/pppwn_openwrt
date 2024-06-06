@@ -14,6 +14,7 @@ pppwn启动默认设置监听了所有的lan端口，如果想要监听特定的
 
 安装解压软件包：
 opkg update
+
 opkg install tar gzip
 
 解压并执行安装：
