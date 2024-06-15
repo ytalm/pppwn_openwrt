@@ -1,7 +1,7 @@
 # pppwn_openwrt
 通过openwrt路由器注入PPPwn，给PS4运行GoldHEN越狱
 
-openwrt自动运行pppwn，整合兼容openwrt路由aarch64和mips和arm(cortex_a7)和arm(pi_zero_w)和x86_64包,其他架构可手动下载对应的pppwn，兼容PS4(v9.00/10.00/10.01/11.00）,
+openwrt自动运行pppwn，整合兼容openwrt路由aarch64和mips和arm(cortex_a7)和arm(pi_zero_w)和x86_64包,其他架构可手动下载对应的pppwn，兼容PS4(v9.00/9.60/10.00/10.01/11.00）,
 
 访问下面的地址可以到运行日志和重启pppwn服务：
 http://<路由器IP>/pppwn.html
@@ -28,9 +28,11 @@ cd pppwn_openwrt
 
 ./install.sh
 
-安装包兼容9.00 / 10.00 / 10.01版本，修改install.sh文件中的FIRMWARE=1100为对应的FIRMWARE版本，
+安装包兼容9.00 / 9.60 / 10.00 / 10.01版本，修改install.sh文件中的FIRMWARE=1100为对应的FIRMWARE版本，
 
 9.00: FIRMWARE=900
+
+9.60：FIRMWARE=960
 
 10.00: FIRMWARE=1000
 
