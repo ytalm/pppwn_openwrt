@@ -1,6 +1,7 @@
 #!/bin/ash
 WORKDIR=$(dirname $0)
 #FIRMWARE=900
+#FIRMWARE=960
 #FIRMWARE=1000
 FIRMWARE=1001
 #FIRMWARE=1100
@@ -42,11 +43,13 @@ fi
 
 echo "Installing..."
 #sed -i 's_downloads.openwrt.org_mirrors.tuna.tsinghua.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
-opkg update
-opkg install kmod-ppp kmod-pppoe kmod-pppox rsync
-rsync -av pppwn/ /
+#opkg update
+#opkg install kmod-ppp kmod-pppoe kmod-pppox rsync
+#rsync -av pppwn/ /
+cp -r ${WORKDIR}/pppwn/* /
 sed -i 's/^VERSION=.*/VERSION='"${FIRMWARE}"'/' /etc/init.d/pppwn
 chmod +x /etc/init.d/pppwn
 chmod +x /www/cgi-bin/pw.cgi
 /etc/init.d/pppwn enable
 /etc/init.d/pppwn start
+echo "Installation complete."
